@@ -1,0 +1,6 @@
+model,rmse,mae,params
+ExpSmoothing,3.8524,3.4363,"seasonal_periods=7, trend=add, seasonal=add, damped_trend=True"
+ARIMA,3.9767,3.5545,"order=(0, 1, 0), seasonal_order=(0, 0, 0, 7)"
+Ensemble,4.0627,3.64,"average of ExpSmoothing, ARIMA, XGBoost"
+XGBoost,4.4578,3.9528,"n_estimators=150, max_depth=5, learning_rate=0.1"
+Prophet,5.5781,4.8506,"yearly_seasonality=True, weekly_seasonality=False, seasonality_mode=additive"
